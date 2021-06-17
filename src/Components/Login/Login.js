@@ -1,7 +1,8 @@
 import { Button } from 'react-bootstrap';
 import React from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import { useContext, useState } from 'react/cjs/react.development';
+import { useContext } from 'react';
+import { useState } from 'react';
 import { UserContext } from '../../App';
 import { initializeFirebaseAppFramework, newUserCreateWithEmailPassword, userSignInWithEmailAndPassword, userSignInWithFacebook, userSignInWithGoogle } from '../Firebase/Firebase';
 import './Login.css';
@@ -117,7 +118,8 @@ const Login = () => {
                 })
         }
 
-    }// END of handleSubmit >> sign up or sign in
+    }
+    // END of handleSubmit >> sign up or sign in
 
 
     const handleGoogleSignIn = () => {

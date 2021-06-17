@@ -1,4 +1,4 @@
-Application Name: Easy Transport
+Application Name: Easy Transport.
 Firebase is used for authentication.
 Full responsive application.
 

@@ -16,16 +16,22 @@ const Header = () => {
     const handleLogIn = () => {
         history.push('./login')
     }
+
+    const routeToPath = (path) => {
+        history.push(path);
+    }
+
     return (
         <Navbar className="nav justify-content-between" sticky="top" collapseOnSelect expand="lg" bg="light" variant="light">
             <Navbar.Brand><Link to="/home" className="brand-name">Easy Transport</Link></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
                 <Nav>
-                    <Nav.Link className="menu-item"><Link to="/home" className="link">Home</Link></Nav.Link>
-                    <Nav.Link className="menu-item"><Link to="/destination" className="link">Destination</Link></Nav.Link>
-                    <Nav.Link className="menu-item"><Link to="/blog" className="link">Blog</Link></Nav.Link>
-                    <Nav.Link className="menu-item"><Link to="/contact" className="link">Contact</Link></Nav.Link>
+                    <Nav.Link onClick={() => routeToPath("/home")} className="link">Home</Nav.Link>
+                    <Nav.Link onClick={() => routeToPath("/destination")} className="link">Destination</Nav.Link>
+                    <Nav.Link onClick={() => routeToPath("/blog")} className="link">Blog</Nav.Link>
+                    <Nav.Link onClick={() => routeToPath("/contact")} className="link">Contact</Nav.Link>
+                    
                     {
                         loggedInUser.displayName ? (<NavDropdown title={loggedInUser.displayName} id="collasible-nav-dropdown" className="link">
                             <NavDropdown.Item><Link to="/profile">Profile</Link></NavDropdown.Item>

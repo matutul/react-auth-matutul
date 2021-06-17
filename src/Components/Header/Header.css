@@ -1,0 +1,30 @@
+.nav{
+    padding: 10px 50px;
+}
+.brand-name{
+    font-size: 2rem;
+    color: rgb(41, 41, 41);
+}
+.brand-name:hover{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+.link{
+    font-size: 1.2rem;
+    color: rgb(24, 24, 24);
+    transition: .3s;
+}
+.link:hover{
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+}
+.menu-item{
+    transition: .4s;
+}
+.menu-item:hover{
+    transform: translateY(-2px);
+    
+}
+.menu-btn{
+    font-size: 1.2rem;
+}

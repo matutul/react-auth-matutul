@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+.auth-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.auth-card{
+    min-width: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px rgba(100, 100, 100, .3);
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    padding: 30px;
+    text-align: center;
+}
+.auth-card h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-checkbox{
+    font-size: 20px;
+}
+/* .form-checkbox input{
+    font-size: 20px;
+} */
+.auth-form input{
+    margin: 8px;
+    padding: 3px 15px;
+    font-size: 20px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}
+.auth-form input:focus{
+    outline: 0;
+    border: 1px solid rgb(156, 156, 156);
+}
+#submit-btn{
+    align-self: center;
+    width: fit-content;
+    padding: 8px 35px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(34, 192, 255);
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+#submit-btn:hover{
+    background-color: rgb(56, 199, 255);
+    box-shadow: 1px 1px 5px rgba(00, 00, 00, .5);
+}
+.signing-btn{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 10px 0;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.541);
+}
+.btn-icon{
+    width: 35px;
+    /* align-self: flex-start; */
+    margin-right: 20px;
+}
+.btn-txt{
+    width: 100%;
+}

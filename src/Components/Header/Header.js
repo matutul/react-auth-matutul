@@ -31,7 +31,7 @@ const Header = () => {
                     <Nav.Link onClick={() => routeToPath("/destination")} className="link">Destination</Nav.Link>
                     <Nav.Link onClick={() => routeToPath("/blog")} className="link">Blog</Nav.Link>
                     <Nav.Link onClick={() => routeToPath("/contact")} className="link">Contact</Nav.Link>
-                    
+                     
                     {
                         loggedInUser.displayName ? (<NavDropdown title={loggedInUser.displayName} id="collasible-nav-dropdown" className="link">
                             <NavDropdown.Item><Link to="/profile">Profile</Link></NavDropdown.Item>
